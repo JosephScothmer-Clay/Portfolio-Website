@@ -7,18 +7,22 @@
 body {
   overflow-x: hidden;
   background-color: black;
-  height: 200vh;
+}
+
+.mainpage {
+  height: 100vh;
+  width: 100vw;
 }
 
 .navbar {
   background-color: white;
   color: #000000;
   z-index: 999;
-  position: fixed;
   width: 100vw;
   height: 14.8vh;
   font-size: 0.875em;
   box-shadow: 0 0.1em 0.625em #ffffff;
+  position: sticky;
 }
 
 .navbar-ul {
@@ -61,4 +65,17 @@ body {
 
 .null {
   background-color: blue;
+}
+
+.opening{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.opening-text {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
 }
