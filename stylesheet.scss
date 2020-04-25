@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
+
+#mainpage {
+  height: 100vh;
+  width: 100vw;
+}
+
+.navbar {
+  background-color: white;
+  color: #000000;
+  z-index: 999;
+  width: 100vw;
+  height: 14.8vh;
+  font-size: 0.875em;
+  box-shadow: 0 0.1em 0.625em #ffffff;
+  position: sticky;
+  font-family: 'Lato', sans-serif;
+  position: fixed;
+
+  .navbar-ul {
+    text-align: right;
+    margin-right: 5vw;
+    position: relative;
+    z-index: 1000;
+    top: 50%;
+    transform: translateY(-50%);
+    li{
+      display: inline-block;
+      margin-left: 2.875em;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
+    a::after{
+      content: '';
+      display: block;
+      width: 0.5em;
+      height: 2px;
+      background: #FF0000;
+      transition: width .4s;
+    }
+    a:hover::after {
+      width: 100%;
+      transition: width .4s;
+    }
+  }
+}
+
+
+
+.democlass {
+  background-color: green;
+}
+
+.null {
+  background-color: blue;
+}
+
+.opening{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.opening-text {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100vw;
+  h1 {
+    font-size: 4em;
+    margin-bottom: 1.5vh;
+  }
+  h2 {
+    font-size: 1em;
+  }
+}
+
+.scroll-down {
+	position: fixed;
+  z-index: 9999;
+	left: 50%;
+	bottom: 3vh;
+	display: block;
+	text-align: center;
+  width: 1.25em;
+  height: 1.25em;
+  border-bottom: 0.1em solid #fff;
+  border-right: 0.1em solid #fff;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  animation: scroll-down-bounce 1.5s infinite;
+}
+
+@keyframes scroll-down-bounce {
+  0%{
+    transform: translateY(0) rotate(45deg);
+    -webkit-transform: translateY(0) rotate(45deg);
+    -moz-transform: translateY(0) rotate(45deg);
+  }
+  50%{
+    transform: translateY(30%) rotate(45deg);
+    -webkit-transform: translateY(30%) rotate(45deg);
+    -moz-transform: translateY(30%) rotate(45deg);
+  }
+  100%{
+    transform: translateY(0) rotate(45deg);
+    -webkit-transform: translateY(0) rotate(45deg);
+    -moz-transform: translateY(0) rotate(45deg);
+  }
+}
+
+/*Case Studies*/
+
+#case-studies {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+
+/*About*/
+
+#about {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  z-index: 3;
+}
+
+
+
+/*Contact*/
+
+#contact {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
