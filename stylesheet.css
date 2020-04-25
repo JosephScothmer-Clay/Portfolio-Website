@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.mainpage {
+  height: 100vh;
+  width: 100vw;
+}
+
+.navbar {
+  background-color: white;
+  color: #000000;
+  z-index: 999;
+  width: 100vw;
+  height: 14.8vh;
+  font-size: 0.875em;
+  box-shadow: 0 0.1em 0.625em #ffffff;
+  position: sticky;
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar-ul {
+  text-align: right;
+  margin-right: 5vw;
+  position: relative;
+  z-index: 1000;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar-ul li{
+  display: inline-block;
+  margin-left: 2.875em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.navbar-ul a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar-ul a::after{
+  content: '';
+  display: block;
+  width: 0.5em;
+  height: 2px;
+  background: #FF0000;
+  transition: width .4s;
+}
+.navbar-ul a:hover::after {
+  width: 100%;
+  transition: width .4s;
+}
+
+.democlass {
+  background-color: green;
+}
+
+.null {
+  background-color: blue;
+}
+
+.opening{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.opening-text {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100vw;
+}
+
+.opening-text h1 {
+  font-size: 4em;
+  margin-bottom: 1.5vh;
+  /*color: transparent;*/
+}
+
+.opening-text h2 {
+  font-size: 1em;
+}
+
+.scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 3vh;
+	display: block;
+	text-align: center;
+  width: 1.25em;
+  height: 1.25em;
+  border-bottom: 0.1em solid #fff;
+  border-right: 0.1em solid #fff;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%{transform: translateY(0) rotate(45deg);}
+  50%{transform: translateY(30%) rotate(45deg);}
+  100%{transform: translateY(0) rotate(45deg);}
+}
