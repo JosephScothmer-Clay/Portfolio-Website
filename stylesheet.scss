@@ -30,42 +30,60 @@ body {
   position: sticky;
   font-family: 'Lato', sans-serif;
   position: fixed;
-
-  .navbar-ul {
-    text-align: right;
-    margin-right: 5vw;
-    position: relative;
-    z-index: 1000;
-    top: 50%;
-    transform: translateY(-50%);
-    li{
-      display: inline-block;
-      margin-left: 2.875em;
-      text-transform: uppercase;
-      font-weight: 900;
+}
+.navbar-ul {
+  text-align: right;
+  margin-right: 5vw;
+  position: relative;
+  z-index: 1000;
+  top: 50%;
+  transform: translateY(-50%);
+  li{
+    display: inline-block;
+    margin-left: 2.875em;
+    text-transform: uppercase;
+    font-weight: 900;
     }
-    a {
-      text-decoration: none;
-      color: #000000;
-    }
-    a::after{
-      content: '';
-      display: block;
-      width: 0.5em;
-      height: 2px;
-      background: #FF0000;
-      transition: width .4s;
-    }
-    a:hover::after {
-      width: 100%;
-      transition: width .4s;
-    }
+  a {
+    text-decoration: none;
+    color: #000000;
   }
 
+  a::after{
+    content: '';
+    display: block;
+    width: 0.5em;
+    height: 0.125em;
+    background: #FF0000;
+    transition: width .4s;
+  }
+  a:hover::after {
+    width: 100%;
+    transition: width .4s;
+  }
+
+  #nav-home{
+    transition: all .5s;
+  }
+
+  #nav-case-studies{
+    transition: all .5s;
+  }
+
+  #nav-about {
+    transition: all .5s;
+  }
+
+  #nav-contact{
+    transition: all .5s;
+  }
 }
+
+
 
 .selected {
   color: #FF0000 !important;
+  transition: all .4s;
 }
 
 .opening{
@@ -142,8 +160,6 @@ body {
   background-color: black;
   z-index: 3;
 }
-
-
 
 /*Contact*/
 
