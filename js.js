@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function(){
   const navcontact = document.getElementById('nav-contact');
   const elements = document.getElementById('selected');
 
-
   function scrollEvent (){
     const scrollable = window.innerHeight;
     const scroll = this.scrollY;
@@ -45,5 +44,9 @@ document.addEventListener('DOMContentLoaded', function(){
   window.addEventListener("scroll", function (event) {
     scrollEvent();
   });
+
+});
+
+window.addEventListener('load', () => {
 
 });
