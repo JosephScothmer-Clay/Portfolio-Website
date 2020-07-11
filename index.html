@@ -1,37 +1,198 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="Joseph's Interactive Curriculum Vitae">
+  <meta name="author" content="Joseph Scothmer-Clay">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="stylesheet.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="js.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="jquery.js"></script>
-  <title>Joseph Scothmer-Clay | Junior Developer</title>
-</head>
 
+  <title>Joseph Scothmer-Clay | Interactive CV</title>
+
+</head>
 <body>
+  <span id="circle" class="circle"></span>
   <section id="mainpage">
     <header>
-      <nav class="navbar">
+      <div class="top-contact">
+        <ul>
+          <li><i class="fa fa-phone"></i><a href="tel:447908410171"> +44 07908 410 171</a></li>
+          <li><i class="fa fa-envelope"></i><a href="mailto:josephscoth@gmail.com"> josephscoth@gmail.com</a></li>
+        </ul>
+      </div>
+      <nav id="navbar">
+        <a href="https://www.linkedin.com/in/joseph-scothmer-clay-50a18215a/" target="_blank" class="fa fa-linkedin">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
         <ul class="navbar-ul">
           <li><a href="#mainpage" id="nav-home">Home</a></li>
+          <li><a href="#invis_about" id="nav-about">About</a></li>
+          <li><a href="#invis_timeline" id="nav-timeline">Timeline</a></li>
           <li><a href="#case-studies" id="nav-case-studies">Case Studies</a></li>
-          <li><a href="#about" id="nav-about">About</a></li>
-          <li><a href="#contact" id="nav-contact">Contact</a></li>
         </ul>
+        <div id="progress-container">
+          <div class="progress-bar" id="myBar">
+            <div class="progress-bar" id="myBar-blur"></div>
+          </div>
+        </div>
       </nav>
     </header>
 
     <div class="opening">
       <div class="opening-text">
         <h1 id="title">Joseph Scothmer-Clay</h1>
-        <h2 id="sub-title">Junior Full Stack Web Developer</h2>
+        <hr></hr>
+        <h2 id="sub-title">Interactive Curriculum Vitae</h2>
       </div>
     </div>
-    <div onclick="location.href='#case-studies';" class="scroll-down"></div>
+    <div onclick="location.href='#invis_about';" class="scroll-down"></div>
+    <div id="invis_about"></div>
+  </section>
+
+  <section id="about">
+    <h1 id="about-title">A Brief Overview of Me</h1>
+    <hr id="about-title-hr"></hr>
+    <section id="about-cards">
+      <div class="about-xp">
+        <div class="about-xp-inner">
+          <div class="about-xp-front">
+            <h2>Experience</h2>
+          </div>
+          <div class="about-xp-back">
+            <p id="page-break">page break</p>
+            <hr></hr>
+            <h3>Leonardo - Manufacturing Apprentice (September 2018 - Current)</h3>
+            <p>Working as a Manufacturing Apprentice, my main duties include:</p>
+            <ul>
+              <li>Performing design for reliability checks for electronic and optical components </li>
+              <li>Working to improve process flow and overall production speeds and efficiency</li>
+              <li>Performing manufacturing, assembly, inspection and testing operations of electronic and optical components</li>
+              <li>Reworking electronic and optical components</li>
+              <li>Engaging in and organising STEM events</li>
+              <li>Provide coaching and guidance to junior team members and apprentices</li>
+            </ul>
+            <hr></hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-qual">
+        <div class="about-qual-inner">
+          <div class="about-qual-front">
+            <h2>Education</h2>
+          </div>
+          <div class="about-qual-back">
+            <p id="page-break">page break</p>
+            <hr></hr>
+            <h3>Southampton Engineering Training Association (Level 3)</h3>
+            <li>BTEC Level 3 Diploma in Engineering – D*D*</li>
+            <li>Performing Engineering Opperations Level 2</li>
+            <hr></hr>
+            <h3>Hounsdown Secondary School (GCSEs)</h3>
+            <li>GCSE Mathematics – 8</li>
+            <li>GCSE Science (Double Award) – 6, 6</li>
+            <li>GCSE English Language – 6 (Speaking - Merit)</li>
+            <li>GCSE English Literature – 6</li>
+            <li>GCSE Ethics and Beliefs – 6</li>
+            <li>GCSE Computer Science – 5</li>
+            <li>GCSE Spanish – 6</li>
+            <li>ECDL (European Computer Driving Licence) - B</li>
+            <li>V-Cert Level 2 Business Studies – Distinction</li>
+            <li>Functional Skills Level 2 Information Technology</li>
+            <hr></hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-skills">
+        <div class="about-skills-inner">
+          <div class="about-skills-front">
+            <h2>Skills</h2>
+          </div>
+          <div class="about-skills-back">
+            <p id="page-break">page break</p>
+            <hr></hr>
+              <h3>Here are Some of my Skills:</h3>
+              <ul>
+                <li>HTML5 and CSS3</li>
+                <li>SASS/SCSS</li>
+                <li>Javascript & JQuery</li>
+                <li>Python</li>
+                <li>Manufacturing and Process Improvement</li>
+                <li>Basic Electronics and Circuitry</li>
+                <li>Computer Aided Design (AutoCAD)</li>
+                <li>Soldering (Surface Mount and Through Hole)</li>
+                <li>Microsoft Office</li>
+                <li>Electrical Instilation and Maintenance</li>
+                <li>Useage of Mechanical Instruments</li>
+              </ul>
+            <hr></hr>
+          </div>
+        </div>
+      </div>
+      <div id="invis_timeline"></div>
+    </section>
+    <h1 id="about-title-depth">A Timeline of Me</h1>
+    <hr id="about-title-hr-depth"></hr>
+    <section class="timeline-section">
+
+      <div class="timeline">
+        <div class="container right">
+          <div class="content">
+            <h2>Sep 2018 - Current</h2>
+            <h3>Manufacturing Apprentice at Leonardo</h3>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>Sep 2018 - Aug 2020</h2>
+            <h3>BTEC Level 3 Diploma in Engineering at SETA</h3>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>Sep 2018 - Feb 2019 </h2>
+            <h3>Performing Engineering Opperations Level 2 at SETA</h3>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2013 - 2018</h2>
+            <h3>GCSE's at Hounsdown Secondary School</h3>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="hobbies">
+      <div class="hobbies-p-div">
+        <h1 id="hobbies-h1">Hobbies and Interests</h1>
+        <p id="hobbies-p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse
+
+        </p>
+      </div>
+  </section>
   </section>
 
   <section id="case-studies">
@@ -39,13 +200,33 @@
     <h1 id="title1">Case Studies</h1>
   </section>
 
-  <section id="about">
-    <h1 id="title1">About</h1>
-  </section>
-
   <section id="contact">
-    <h1 id="title1">Contact</h1>
+    <form class="contact-form" action="contactform.php" method="post">
+      <div class="box">Hire
+       <div class="word">
+           <span>someone reliable</span>
+           <span>a team player</span>
+           <span>a hardworker</span>
+           <span>a problem solver</span>
+           <span>someone determined</span>
+           <span>a quick learner</span>
+       </div>
+     <!--</div>
+      <p>Full Name:</p>
+      <input type="text" name="name">
+      <p>E-Mail:</p>
+      <input type="text" name="mail">
+      <p>Subject:</p>
+      <input type="text" name="subject">
+      <p>Message:</p>
+      <textarea type="message" name="message" rows="4"></textarea>
+      <br></br>
+      <button type="submit" name="submit">Submit</button> -->
+    </form>
+
   </section>
 </body>
+
+
 
 </!DOCTYPE html>
