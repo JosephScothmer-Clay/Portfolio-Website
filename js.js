@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const navhome = document.getElementById('nav-home');
   const navcasestudies = document.getElementById('nav-case-studies');
   const navabout = document.getElementById('nav-about');
-  const navtimeline = document.getElementById('nav-timeline');
+  const navcontact = document.getElementById('nav-contact');
   const elements = document.getElementById('selected');
 
   function scrollEvent (){
@@ -11,28 +11,28 @@ document.addEventListener('DOMContentLoaded', function(){
     if (scroll >=0 && scroll < (scrollable - scrollable/5.5)){
       navcasestudies.classList.remove('selected');
       navabout.classList.remove('selected');
-      navtimeline.classList.remove('selected');
+      navcontact.classList.remove('selected');
       navhome.classList.add('selected');
     }
-    else if (scroll >=(scrollable - scrollable/5.5) && scroll < (scrollable*2 - scrollable/5.5)){
+    else if (scroll >=(scrollable - scrollable/5.5) && scroll < (scrollable*4 - scrollable/5.5)){
       navhome.classList.remove('selected');
       navcasestudies.classList.remove('selected');
-      navtimeline.classList.remove('selected');
+      navcontact.classList.remove('selected');
       navabout.classList.add('selected');
     }
 
-    else if (scroll >=(scrollable*2 - scrollable/5.5 ) && scroll < (scrollable*3 - scrollable/5.5)){
+    else if (scroll >=(scrollable*4 - scrollable/5.5) && scroll < (scrollable*4)){
+      navhome.classList.remove('selected');
+      navabout.classList.remove('selected');
+      navcontact.classList.remove('selected');
+      navcasestudies.classList.add('selected');
+    }
+
+    else if (scroll >=(scrollable*4) && scroll < (scrollable*8)){
       navhome.classList.remove('selected');
       navabout.classList.remove('selected');
       navcasestudies.classList.remove('selected');
-      navtimeline.classList.add('selected');
-    }
-
-    else if (scroll >=(scrollable*3 - scrollable/5.5) && scroll < (scrollable*4)){
-      navhome.classList.remove('selected');
-      navabout.classList.remove('selected');
-      navtimeline.classList.remove('selected');
-      navcasestudies.classList.add('selected');
+      navcontact.classList.add('selected');
     }
 
     else {
@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function(){
     input.setAttribute('autocapitalize', 'off')
     input.setAttribute('spellcheck', false)
   })
+
   // When the user scrolls the page, execute myFunction
   window.onscroll = function() {stickynav()};
 
@@ -71,13 +72,18 @@ document.addEventListener('DOMContentLoaded', function(){
       if (window.pageYOffset >= sticky) {
         navbar.classList.add("navbar-fixed")
         navbar.classList.remove("navbar-relative")
-        lkdn.classlist.add("fa-linkedin-after")
       } else {
         navbar.classList.remove("navbar-fixed");
         navbar.classList.add("navbar-relative")
-        lkdn.classlist.remove("fa-linkedin-after")
-
       }
-  }
+    }
 
+    function validateForm(){
+      var inpFn = document.getElementById("inpFn");
+      if(!inpFn.checkValidity()) {
+        alert("no");
+      } else {
+        alert("yes");
+      }
+    }
 });

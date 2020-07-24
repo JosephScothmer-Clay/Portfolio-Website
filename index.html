@@ -10,20 +10,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/javascript" src="js.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script type="text/javascript" src="js.js"></script>
   <script type="text/javascript" src="jquery.js"></script>
-
   <title>Joseph Scothmer-Clay | Interactive CV</title>
 
 </head>
 <body>
-  <span id="circle" class="circle"></span>
   <section id="mainpage">
     <header>
       <div class="top-contact">
         <ul>
-          <li><i class="fa fa-phone"></i><a href="tel:447908410171"> +44 07908 410 171</a></li>
+          <li><i class="fa fa-phone"></i><a href="tel:447908410171"> +44 7908 410 171</a></li>
           <li><i class="fa fa-envelope"></i><a href="mailto:josephscoth@gmail.com"> josephscoth@gmail.com</a></li>
         </ul>
       </div>
@@ -37,8 +36,8 @@
         <ul class="navbar-ul">
           <li><a href="#mainpage" id="nav-home">Home</a></li>
           <li><a href="#invis_about" id="nav-about">About</a></li>
-          <li><a href="#invis_timeline" id="nav-timeline">Timeline</a></li>
           <li><a href="#case-studies" id="nav-case-studies">Case Studies</a></li>
+          <li><a href="#invis_contact" id="nav-contact">Contact</a></li>
         </ul>
         <div id="progress-container">
           <div class="progress-bar" id="myBar">
@@ -51,7 +50,7 @@
     <div class="opening">
       <div class="opening-text">
         <h1 id="title">Joseph Scothmer-Clay</h1>
-        <hr></hr>
+        <hr id="title-hr"></hr>
         <h2 id="sub-title">Interactive Curriculum Vitae</h2>
       </div>
     </div>
@@ -62,6 +61,14 @@
   <section id="about">
     <h1 id="about-title">A Brief Overview of Me</h1>
     <hr id="about-title-hr"></hr>
+    <div class="personal-statement">
+      <h2 id="personal-statement-h2">Hi, I'm Joseph</h2>
+      <p id="personal-statement-p">I am a quick-learning individual with a keen interest in pursuing
+      a career in software engineering. Hobbyist coding experience has facilitated my enthusiasm
+      for software engineering - igniting the creation of personal projects employing a range of
+      programming languages.</p>
+    </div>
+
     <section id="about-cards">
       <div class="about-xp">
         <div class="about-xp-inner">
@@ -124,23 +131,21 @@
             <hr></hr>
               <h3>Here are Some of my Skills:</h3>
               <ul>
-                <li>HTML5 and CSS3</li>
-                <li>SASS/SCSS</li>
-                <li>Javascript & JQuery</li>
-                <li>Python</li>
                 <li>Manufacturing and Process Improvement</li>
                 <li>Basic Electronics and Circuitry</li>
                 <li>Computer Aided Design (AutoCAD)</li>
                 <li>Soldering (Surface Mount and Through Hole)</li>
+                <li>HTML5 and CSS3</li>
+                <li>SASS/SCSS</li>
+                <li>Javascript & JQuery</li>
+                <li>Python</li>
                 <li>Microsoft Office</li>
-                <li>Electrical Instilation and Maintenance</li>
-                <li>Useage of Mechanical Instruments</li>
+                <li>Project Planning</li>
               </ul>
             <hr></hr>
           </div>
         </div>
       </div>
-      <div id="invis_timeline"></div>
     </section>
     <h1 id="about-title-depth">A Timeline of Me</h1>
     <hr id="about-title-hr-depth"></hr>
@@ -151,28 +156,44 @@
           <div class="content">
             <h2>Sep 2018 - Current</h2>
             <h3>Manufacturing Apprentice at Leonardo</h3>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            <p>Experience in more than 10 departments that cover the process of manufacturing, testing and developing
+            cutting-edge thermal cameras and detectors used for a multitude of applications. As an apprentice, I have
+            worked alongside some of the top engineers and technicians in order to strongly develop my skills in a
+            variety of areas. I have experience working in controlled enviroments as well as enviroments with hazarderous
+            chemicals and equipment and I am therefore well-versed in health and safety practices and procedures.</p>
           </div>
         </div>
         <div class="container right">
           <div class="content">
             <h2>Sep 2018 - Aug 2020</h2>
             <h3>BTEC Level 3 Diploma in Engineering at SETA</h3>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            <p>Studying for my BTEC Diploma in engineering has provided me with a strong foundation of theoretical
+            engineering knowledge - this encompasses Mathematics as well as Mechanical Principals, Electrical principals,
+            Computer Aided Design, Materials Engineering, Mechanical Systems, Engineering Design, Engineering Drawing,
+            Communications, Health and Safety as well as a final project.</p>
           </div>
         </div>
         <div class="container right">
           <div class="content">
             <h2>Sep 2018 - Feb 2019 </h2>
             <h3>Performing Engineering Opperations Level 2 at SETA</h3>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            <p>This qualification undertaken at SETA encompasses a wide variety of technical skills needed to
+            perform engineering opperations. This qualification is mostly practical and involved showing competence
+            in: Electrical Instilation, Electrical Maintenance, Electrical Conduit and Trunking, Mechanical Maintenance,
+            Benchfitting and the usage of Lathes. During the 24 weeks, I also developed theoretical knowledge of theese topics and
+            of health and safety procedures and legislation surrounding working in an engineering enviroment. </p>
           </div>
         </div>
         <div class="container right">
           <div class="content">
-            <h2>2013 - 2018</h2>
+            <h2>Sep 2013 - July 2018</h2>
             <h3>GCSE's at Hounsdown Secondary School</h3>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            <p>During my time at Hounsdown, I demonstrated an aptitude in Mathematics and Science graduating
+              with a grade in the top 8.3% of people in Mathematics and the top 15.9% in Science (with an average
+              overall grade of 6.2). Additionally, I was the national winner for the SciTech challenge hosted by
+              Young Enterprise and Exxonmobil. Furthermore, throughout my years at Hounsdown, I have recieved 4
+              student-of-the-month awards as well as several other commendations for both my attitude and acedemic
+              acomplishments.</p>
           </div>
         </div>
       </div>
@@ -181,50 +202,146 @@
   <section class="hobbies">
       <div class="hobbies-p-div">
         <h1 id="hobbies-h1">Hobbies and Interests</h1>
-        <p id="hobbies-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse
+        <div class="coding-title">
+          <h2>PROGRAMMING</h2>
+        </div>
 
-        </p>
+        <div class="coding-p">
+          <p>
+            I enjoy coding because it is fundamentally about creating solutions to problems, creating
+            something that didn't exist in the morning that is useful is very satisfying. I first began coding using
+            Python in secondary school and have branched out into languages such as: HTML5, CSS3, SCSS/SASS, Javascript,
+            JQuery and most recently, PHP.
+          </p>
+        </div>
+
+        <div class="motor-title">
+          <h2>MOTORCYCLING</h2>
+        </div>
+        <div class="motor-p">
+          <p>
+            Motorcycling is more to me than just a cheap mode of transportation, its freeing. You see the enviroment around
+            you, you feel the wind, hear the sounds around you, smell the land around you and feel the texture of the road
+            you ride on. Going on a ride on a motorcycle is not driving from one place to the other, its an adventure.
+            Motorcycle maintenance has taught me how to problem solve more effectively and how to find faults methodically.
+          </p>
+        </div>
+
+        <div class="martial-title">
+          <h2>MARTIAL ARTS</h2>
+        </div>
+
+        <div class="martial-p">
+          <p>
+            I enjoy coding because it is fundamentally about creating solutions to problems, creating
+            something that didn't exist in the morning that is useful is very satisfying. I first began coding using
+            Python in secondary school and have branched out into languages such as: HTML5, CSS, SCSS/SASS, Javascript,
+            JQuery and most recently, PHP.
+          </p>
+        </div>
       </div>
   </section>
   </section>
 
   <section id="case-studies">
-    <div class="case-studies-scroll-down"></div>
-    <h1 id="title1">Case Studies</h1>
+    <div class="case-nav">
+      <div class="tab">
+        <input type="radio" name="css-tabs" class="tab-switch" id="tab-1">
+        <label for="tab-1">Leonard-Bot</label>
+        <div id="leonard" class="case">
+          <h1>Leonard-Bot</h1>
+        </div>
+      </div>
+
+      <div class="tab">
+        <input type="radio" name="css-tabs" class="tab-switch" id="tab-2">
+        <label for="tab-2">Equipment Search Program</label>
+        <div id="search" class="case">
+          <h1>Equipment Search</h1>
+        </div>
+      </div>
+
+      <div class="tab">
+        <input type="radio" name="css-tabs" class="tab-switch" id="tab-3" checked='checked'>
+        <label for="tab-3">Website Project</label>
+        <div id="website" class="case">
+          <h1>Website</h1>
+        </div>
+
+      </div>
+    </div>
+
+    <p id="invis_contact"></p>
   </section>
 
   <section id="contact">
-    <form class="contact-form" action="contactform.php" method="post">
-      <div class="box">Hire
-       <div class="word">
-           <span>someone reliable</span>
-           <span>a team player</span>
-           <span>a hardworker</span>
-           <span>a problem solver</span>
-           <span>someone determined</span>
-           <span>a quick learner</span>
+    <div class="box">So Why Not Hire
+     <div class="word">
+         <span>someone reliable?</span>
+         <span>a team player?</span>
+         <span>a hardworker?</span>
+         <span>a problem solver?</span>
+         <span>someone enthusiastic?</span>
+         <span>a quick learner?</span>
+     </div>
+   </div>
+   <div class="message-or-email-box">
+     <div class="message">
+       <h1 id="contact-message">So Send me a Message</h1>
+     </div>
+     <div class="email">
+       <h1 id="contact-email">Contact me Directly</h1>
+     </div>
+   </div>
+   <div class="or">
+     <h1 id="contact-or">OR</h1>
+   </div>
+   <div class="contact-lower">
+     <form class="contact-form" action="contactform.php" method="post">
+       <div>
+         <input type="text" name="name" class="input-class" id="inpFn" placeholder="" required>
+         <label>Full Name</label>
+         <span class="focus-border"></span>
        </div>
-     <!--</div>
-      <p>Full Name:</p>
-      <input type="text" name="name">
-      <p>E-Mail:</p>
-      <input type="text" name="mail">
-      <p>Subject:</p>
-      <input type="text" name="subject">
-      <p>Message:</p>
-      <textarea type="message" name="message" rows="4"></textarea>
-      <br></br>
-      <button type="submit" name="submit">Submit</button> -->
-    </form>
+       <div>
+         <input type="text" name="mail" class="input-class" id="inpEm" placeholder="" required>
+         <label>Email Address</label>
+         <span class="focus-border"></span>
+       </div>
+       <div>
+         <input type="text" name="subject" class="input-class" id="inpSub" placeholder="" required>
+         <label>Subject</label>
+         <span class="focus-border"></span>
+       </div>
+       <div>
+         <textarea type="message" name="message" rows="4" class="input-class" id="inpMes" placeholder="" required></textarea>
+         <label>Message</label>
+         <span class="focus-border textarea-span"></span>
+       </div>
+       <button type="submit" name="submit">Submit</button>
+       <div class="g-recaptcha" data-sitekey="LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="capcha_filled"
+       data-expired-callback="capcha_expired"></div>
+     </form>
 
+     <div class="contact-direct">
+       <div class="contact-direct-area">
+         <div class="contact-direct-email">
+           <h1 id="contact-direct-email-title-h1"><i class="fa fa-envelope"></i> Email </h1>
+           <h1 id="contact-direct-email-h1"><a href="mailto:josephscoth@gmail.com">josephscoth@gmail.com</a></h1>
+         </div>
+         <div class="contact-direct-phone">
+           <h1 id="contact-direct-phone-title-h1"><i class="fa fa-phone"></i> Mobile</h1>
+           <h1 id="contact-direct-phone-h1"><a href="tel:447908410171"> +44 7908410171</a></h1>
+         </div>
+       </div>
+     </div>
+
+   </div>
+
+    <!--tst - 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI
+    site key - 6LdkLbMZAAAAACkRG_31pmosXfgE19gBPOYk1mSi-->
   </section>
+
 </body>
 
 
