@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', function(){
       navabout.classList.add('selected');
     }
 
-    else if (scroll >=(scrollable*4 - scrollable/5.5) && scroll < (scrollable*4)){
+    else if (scroll >=(scrollable*4 - scrollable/5.5) && scroll < (scrollable*5)){
       navhome.classList.remove('selected');
       navabout.classList.remove('selected');
       navcontact.classList.remove('selected');
       navcasestudies.classList.add('selected');
     }
 
-    else if (scroll >=(scrollable*4) && scroll < (scrollable*8)){
+    else if (scroll >=(scrollable*5) && scroll < (scrollable*8)){
       navhome.classList.remove('selected');
       navabout.classList.remove('selected');
       navcasestudies.classList.remove('selected');
@@ -70,11 +70,11 @@ document.addEventListener('DOMContentLoaded', function(){
       var scrolled = (winScroll / height) * 100;
       document.getElementById("myBar").style.width = (scrolled + "%");
       if (window.pageYOffset >= sticky) {
-        navbar.classList.add("navbar-fixed")
-        navbar.classList.remove("navbar-relative")
+        navbar.classList.add("navbar-fixed");
+        navbar.classList.remove("navbar-relative");
       } else {
         navbar.classList.remove("navbar-fixed");
-        navbar.classList.add("navbar-relative")
+        navbar.classList.add("navbar-relative");
       }
     }
 

@@ -14,17 +14,17 @@
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script type="text/javascript" src="js.js"></script>
   <script type="text/javascript" src="jquery.js"></script>
-  <title>Joseph Scothmer-Clay | Interactive CV</title>
+  <title>Joseph Scothmer-Clay | Interactive Portfolio</title>
 
 </head>
 <body>
-  <div class="loader">
+  <!--<div class="loader">
     <div class="dots-container">
       <p id="loading">Loading</p>
       <div class="dots"></div>
       <div class="dots"></div>
       <div class="dots"></div>
-    </div>
+    </div>-->
 
   </div>
   <section id="mainpage">
@@ -45,7 +45,7 @@
         <ul class="navbar-ul">
           <li><a href="#mainpage" id="nav-home">Home</a></li>
           <li><a href="#invis_about" id="nav-about">About</a></li>
-          <li><a href="#case-studies" id="nav-case-studies">Case Studies</a></li>
+          <li><a href="#invis_case" id="nav-case-studies">Case Studies</a></li>
           <li><a href="#invis_contact" id="nav-contact">Contact</a></li>
         </ul>
         <div id="progress-container">
@@ -60,7 +60,7 @@
       <div class="opening-text">
         <h1 id="title">Joseph Scothmer-Clay</h1>
         <hr id="title-hr"></hr>
-        <h2 id="sub-title">Interactive Curriculum Vitae</h2>
+        <h2 id="sub-title">Interactive Portfolio</h2>
       </div>
     </div>
     <div onclick="location.href='#invis_about';" class="scroll-down"></div>
@@ -163,7 +163,21 @@
       <div class="timeline">
         <div class="container right">
           <div class="content">
-            <h2>Sep 2018 - Current</h2>
+            <h2>Sep 2020 - Current</h2>
+            <h3>Degree Apprentice at Shell Energy Retail</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>Sep 2020 - Current</h2>
+            <h3>BSc (Hons) Digital and Technology Solutions at The Open University</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>Sep 2018 - Sep 2020</h2>
             <h3>Manufacturing Apprentice at Leonardo</h3>
             <p>Experience in more than 10 departments that cover the process of manufacturing, testing and developing
             cutting-edge thermal cameras and detectors used for a multitude of applications. As an apprentice, I have
@@ -175,7 +189,7 @@
         <div class="container right">
           <div class="content">
             <h2>Sep 2018 - Aug 2020</h2>
-            <h3>BTEC Level 3 Diploma in Engineering at SETA</h3>
+            <h3>BTEC Level 3 Diploma in Engineering at SETA D*D* (112 UCAS Points)</h3>
             <p>Studying for my BTEC Diploma in engineering has provided me with a strong foundation of theoretical
             engineering knowledge - this encompasses Mathematics as well as Mechanical Principals, Electrical principals,
             Computer Aided Design, Materials Engineering, Mechanical Systems, Engineering Design, Engineering Drawing,
@@ -233,6 +247,7 @@
             you, you feel the wind, hear the sounds around you, smell the land around you and feel the texture of the road
             you ride on. Going on a ride on a motorcycle is not driving from one place to the other, its an adventure.
             Motorcycle maintenance has taught me how to problem solve more effectively and how to find faults methodically.
+            <br>
           </p>
         </div>
 
@@ -242,21 +257,25 @@
 
         <div class="martial-p">
           <p>
-            I enjoy coding because it is fundamentally about creating solutions to problems, creating
-            something that didn't exist in the morning that is useful is very satisfying. I first began coding using
-            Python in secondary school and have branched out into languages such as: HTML5, CSS, SCSS/SASS, Javascript,
-            JQuery and most recently, PHP.
+            Having achieved a black-belt in Taekwondo, I have been able to teach and instruct lower belts new moves and techniques.
+            Doing so has given me some leadership experience as well as experience public speaking and teaching. I have recently
+            branched out to other sports such as Brazillian Jiu Jitsu and Boxing.
+            <br>
+            <br>
+            <br>
           </p>
         </div>
       </div>
+      <p id="invis_case"></p>
   </section>
   </section>
+
 
   <section id="case-studies">
     <div class="case-nav">
       <div class="tab">
         <input type="radio" name="css-tabs" class="tab-switch" id="tab-1">
-        <label for="tab-1">Leonard-Bot</label>
+        <label for="tab-1" id="tab-1-label">Project1</label>
         <div id="leonard" class="case">
           <h1>Leonard-Bot</h1>
         </div>
@@ -264,7 +283,7 @@
 
       <div class="tab">
         <input type="radio" name="css-tabs" class="tab-switch" id="tab-2">
-        <label for="tab-2">Equipment Search Program</label>
+        <label for="tab-2">Project2</label>
         <div id="search" class="case">
           <h1>Equipment Search</h1>
         </div>
@@ -284,29 +303,25 @@
   </section>
 
   <section id="contact">
-    <div class="box">So Why Not Hire
+    <div class="box">So Why Not Contact
      <div class="word">
          <span>someone reliable?</span>
          <span>a team player?</span>
          <span>a hardworker?</span>
          <span>a problem solver?</span>
-         <span>someone enthusiastic?</span>
+         <span>a professional?</span>
          <span>a quick learner?</span>
      </div>
    </div>
-   <div class="message-or-email-box">
-     <div class="message">
-       <h1 id="contact-message">So Send me a Message</h1>
-     </div>
-     <div class="email">
-       <h1 id="contact-email">Contact me Directly</h1>
-     </div>
    </div>
    <div class="or">
      <h1 id="contact-or">OR</h1>
    </div>
    <div class="contact-lower">
      <form class="contact-form" action="contactform.php" method="post">
+       <div class="message">
+         <h1 id="contact-message">So Send me a Message</h1>
+       </div>
        <div>
          <input type="text" name="name" class="input-class" id="inpFn" placeholder="" required>
          <label>Full Name</label>
@@ -332,7 +347,11 @@
        data-expired-callback="capcha_expired"></div>
      </form>
 
+
      <div class="contact-direct">
+       <div class="email">
+         <h1 id="contact-email">Contact me Directly</h1>
+       </div>
        <div class="contact-direct-area">
          <div class="contact-direct-email">
            <h1 id="contact-direct-email-title-h1"><i class="fa fa-envelope"></i> Email </h1>
